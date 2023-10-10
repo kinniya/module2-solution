@@ -1,1 +1,54 @@
+body {
+    margin: 0;
+    font-family: 'Your Chosen Font', sans-serif; /* Optional: Set a custom font */
+}
+
+h1 {
+    font-size: 2em; /* 75% larger than dummy text */
+}
+
+.section {
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #1a1a1a; /* Unique color for section title region */
+    color: white; /* Text color for better readability */
+    padding: 5px 10px;
+}
+
+/* Desktop view */
+@media (min-width: 992px) {
+    .section {
+        width: 33.33%;
+        float: left;
+    }
+}
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        width: 50%;
+        float: left;
+    }
+
+    .section:nth-child(3) {
+        clear: both;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+    .section {
+        width: 100%;
+        float: none;
+    }
+}
 
