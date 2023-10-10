@@ -13,30 +13,15 @@ h1 {
     margin: 10px;
     padding: 20px;
     position: relative;
-    background-color: #ddd; /* Grey background for all sections */
 }
 
 .section-title {
     position: absolute;
     top: 0;
     right: 0;
+    background-color: #1a1a1a; /* Unique color for section title region */
     color: white; /* Text color for better readability */
     padding: 5px 10px;
-}
-
-/* Chicken box background in pink */
-.section:nth-child(1) {
-    background-color: #ff69b4; /* Pink background for Chicken */
-}
-
-/* Beef box background in red */
-.section:nth-child(2) {
-    background-color: #ff0000; /* Red background for Beef */
-}
-
-/* Sushi box background in olive */
-.section:nth-child(3) {
-    background-color: #808000; /* Olive background for Sushi */
 }
 
 /* Desktop view */
